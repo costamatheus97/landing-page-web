@@ -1,4 +1,4 @@
-## Nesse projeto farei uma versão minimalista da Apple, implantando features com as tecnologias que estou aprendendo.
+## Nesse projeto farei uma versão minha da Apple, implantando features com as tecnologias que estou aprendendo.
 
 
 ### Versão Atual:
