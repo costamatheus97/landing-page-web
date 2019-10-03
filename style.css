@@ -1,0 +1,189 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  width: 90%;
+  height: 12vh;
+  margin: auto;
+  align-items: center;
+}
+.assinatura {
+  display: flex;
+  position: absolute;
+  left: 45%;
+  bottom: 0%;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+  display: flex;
+}
+
+#logoapple {
+  width: 50px;
+  height: auto;
+}
+.logo {
+  font-weight: bold;
+  padding: 5px 0px 0px 0px;
+}
+
+.logo-container {
+  flex: 1;
+}
+nav {
+  flex: 2;
+}
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+.nav-link {
+  color: #5f5f79;
+  font-size: 18px;
+  text-decoration: none;
+}
+.cart {
+  flex: 1;
+  justify-content: flex-end;
+}
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+.introduction {
+  flex: 1;
+}
+.intro-text h1 {
+  font-size: 60px;
+  font-weight: 500;
+  background: linear-gradient(to right, #39394e, #6f6f89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro-text p {
+  margin-top: 5px;
+  font-size: 25px;
+  color: #5f5f77;
+}
+.cta {
+  padding: 50px 0px 0px 0px;
+}
+.cta-select {
+  border: 2px solid #5f5f77;
+  background: transparent;
+  color: #5f5f77;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.cta-add {
+  background: #5f5f77;
+  color: white;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0px 0px 30px;
+}
+
+.cover {
+  flex: 1;
+  padding: 0px 0px 0px 200px;
+  justify-content: center;
+  height: 60vh;
+}
+
+.cover img {
+  height: 100%;
+  filter: drop-shadow(0px 5px 5px black);
+  animation: drop 1.5s ease;
+}
+
+.big-circle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.2;
+  height: 70%;
+}
+
+.mid-circle {
+  position: absolute;
+  top: 30%;
+  right: 42%;
+  z-index: -1;
+  height: 70%;
+  opacity: 0.3;
+}
+.small-circle {
+  position: absolute;
+  top: 70%;
+  right: 77%;
+  z-index: -1;
+  height: 40%;
+  opacity: 0.8;
+}
+.laptop-select {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 21%;
+  padding: 0px 0px 0px 50%;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .presentation {
+    flex-direction: column;
+  }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+  .intro-text h1 {
+    font-size: 30px;
+  }
+  .intro-text p {
+    font-size: 18px;
+  }
+  .cta {
+    padding: 10px 0px 0px 0px;
+  }
+  .laptop-select {
+    display: inline-flex;
+    bottom: 0%;
+    right: 70%;
+    width: 40%;
+    transform: translate(50%, 5%);
+  }
+  .cover img {
+    display: flex;
+    height: 80%;
+    padding: 10% 45% 0px 0px;
+    width: auto;
+  }
+  .small-circle,
+  .mid-circle,
+  .big-circle {
+    opacity: 0.2;
+  }
+}
